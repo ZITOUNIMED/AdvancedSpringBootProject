@@ -19,4 +19,5 @@ public class Person extends GenericEntity {
     private String email;
     private String role;
     private String password;
+    private boolean enable;
 }

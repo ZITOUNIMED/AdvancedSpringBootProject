@@ -28,6 +28,9 @@ dependencies {
 	implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.6.1'
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.6.1'
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.security:spring-security-test'
 }
 
 /*test {
