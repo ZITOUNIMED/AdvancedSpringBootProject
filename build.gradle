@@ -31,6 +31,8 @@ dependencies {
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation group: 'org.projectreactor', name: 'reactor-spring', version: '1.0.1.RELEASE'
 }
 
 /*test {

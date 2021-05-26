@@ -27,4 +27,9 @@ public class Product extends GenericEntity{
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @Override
+    public String toString(){
+        return "Product{id: "+id+", ref: '"+ref+"', price: "+price+"}";
+    }
 }

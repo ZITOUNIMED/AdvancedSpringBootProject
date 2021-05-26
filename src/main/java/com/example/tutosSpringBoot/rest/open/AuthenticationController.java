@@ -1,10 +1,9 @@
-package com.example.tutosSpringBoot.rest;
+package com.example.tutosSpringBoot.rest.open;
 
 import com.example.tutosSpringBoot.config.jwt.JwtTokenProvider;
 import com.example.tutosSpringBoot.data.entities.Person;
 import com.example.tutosSpringBoot.data.repositories.PersonRepository;
 import com.example.tutosSpringBoot.rest.requests.LoginRequest;
-import com.example.tutosSpringBoot.rest.requests.SignUpRequest;
 import com.example.tutosSpringBoot.rest.responses.AuthResponse;
 
 import org.springframework.http.ResponseEntity;
@@ -23,7 +22,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/open/auth")
 public class AuthenticationController {
 	@Autowired
 	AuthenticationManager authenticationManager;

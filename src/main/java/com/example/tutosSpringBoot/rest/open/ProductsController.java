@@ -1,10 +1,11 @@
-package com.example.tutosSpringBoot.rest;
+package com.example.tutosSpringBoot.rest.open;
 
 import java.util.List;
 
 import com.example.tutosSpringBoot.data.entities.Product;
 import com.example.tutosSpringBoot.data.services.ICrudService;
 import com.example.tutosSpringBoot.data.services.impl.ProductsService;
+import com.example.tutosSpringBoot.rest.AbstractRestController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/open/products")
 public class ProductsController extends AbstractRestController<Product>{
     @Autowired
     private ProductsService service;
