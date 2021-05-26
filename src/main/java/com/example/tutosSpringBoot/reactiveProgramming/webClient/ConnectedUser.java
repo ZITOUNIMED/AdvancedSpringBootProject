@@ -2,7 +2,6 @@ package com.example.tutosSpringBoot.reactiveProgramming.webClient;
 
 import com.example.tutosSpringBoot.rest.responses.AuthResponse;
 
-import lombok.Getter;
 public class ConnectedUser {
     private static String email;
     private static String token;
